@@ -1,0 +1,4 @@
+agri_advisor/ 
+.streamlit/secrets.toml
+__pycache__/ 
+*.pyc
