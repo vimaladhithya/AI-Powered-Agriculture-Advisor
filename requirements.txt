@@ -2,4 +2,4 @@ streamlit
 google-generativeai
 pandas
 requests
-crewai==0.95.0
+crewai
