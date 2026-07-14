@@ -1,5 +1,5 @@
 streamlit
 google-generativeai
 pandas
-crewai
 requests
+crewai==0.95.0
