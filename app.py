@@ -4,7 +4,9 @@ from agents.location_agent import run_location_agent
 from agents.weather_agent import run_weather_agent
 from agents.soil_agent import run_soil_agent
 from agents.agriculture_agent import run_agriculture_agent
+from get_coordinates import coordinates
 import pandas as pd
+import ast 
 
 # PAGE CONFIG
 
@@ -288,14 +290,13 @@ if button:
                 API_KEY
             )
 
+
             st.markdown(
                 f"<div class='result-box'>{result_location}</div>",
                 unsafe_allow_html=True
             )
 
-            #lat, long = get_coordinates()
-            lat=st.session_state.get("latitude")
-            long=st.session_state.get("longitude")
+            lat,long=coordinates(city)
 
             st.subheader("🌦 Weather Analysis")
 

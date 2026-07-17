@@ -29,8 +29,7 @@ def get_coordinates_agent(city):
     global location 
     location=data["results"][0]
     #print(location)
-    st.session_state["latitude"] = location["latitude"]
-    st.session_state["longitude"] = location["longitude"]
+    
     return {
         "city": location["name"],
         "latitude": location["latitude"],
